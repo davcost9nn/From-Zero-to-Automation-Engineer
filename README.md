@@ -17,4 +17,4 @@
 - Python 3.12  
 - pytest, Selenium, Playwright  
 - Allure, GitHub Actions  # From-Zero-to-Automation-Engineer
-[![Pytest](https://github.com/davcost9nn/From-Zero-to-Automation-Engineer/actions/workflows/pytest.yml/badge.svg)](https://github.com/davcost9nn/From-Zero-to-Automation-Engineer/actions)  
+[![Pytest](https://github.com/davcost9nn/From-Zero-to-Automation-Engineer/actions/workflows/pytest.yml/badge.svg)](https://github.com/davcost9nn/From-Zero-to-Automation-Engineer/actions) 
