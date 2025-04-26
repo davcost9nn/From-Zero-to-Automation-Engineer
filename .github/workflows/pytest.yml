@@ -1,0 +1,29 @@
+name: Pytest
+
+on:
+  push:
+    branches: [ "main" ]  # Запускать при пуше в ветку main
+  pull_request:
+    branches: [ "main" ]  # И при пулл-реквестах
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # ОС для запуска
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4  # Клонирует ваш репозиторий
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"  # Укажите вашу версию Python
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # Если есть файл с зависимостями
+          pip install pytest  # Установка pytest
+
+      - name: Run tests
+        run: pytest -v  # Запуск тестов с подробным выводом
